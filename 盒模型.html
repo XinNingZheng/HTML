@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <style>
+        body{
+            padding:0;
+            margin: 0;
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 10px solid gray;
+            margin: 30px;
+            padding: 30px;
+        }
+        #div2{
+            background-color: red;
+            height: 100px;
+            width: 200px;
+        }
+        #div3{
+            background-color: #f461ff;
+        }
+        #span1{
+            width: 200px;
+            padding: 20px;
+            /*margin-top: 20px;  不起作用*/
+
+            display: block;
+            background-color: palegreen;
+
+        }
+        #div4{
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            display: inline;
+        }
+        .box{
+            width: 80px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;/*水平居中*/
+            line-height: 30px;
+            border-radius: 5px;
+        }
+        .box1{
+            background-color: pink;
+        }
+        .box2{
+            background-color: #ffff3e;
+        }
+        .box3{
+            background-color: #74b3ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">测试内外边距和边框</div>
+    <div id="div2">这是一个设置了宽高的块级元素</div>
+    <div id="div3">这是一个没设置宽高的块级元素</div>
+    
+    <span id="span1">这是一个被转换为块级元素的行级元素span</span>
+
+    <div id="div4">这是一个被转换为行级元素的块级元素div</div>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+
+</body>
+</html>
