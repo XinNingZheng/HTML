@@ -15,7 +15,7 @@
 
         #list{
             width: 500px;
-            height: 30px;
+            /*height: 30px;*/
         }
 
         #list .item {
@@ -57,23 +57,26 @@
             display: block;
         }
 
+        a{
+            text-decoration:none;
+        }
+
     </style>
 </head>
 <body>
    <ul id="list">
-       <li class="item"><a href="">链接1</a></li>
-       <li class="item"><a href="">链接2</a></li>
+       <li class="item"><a href="">菜单1</a></li>
+       <li class="item"><a href="">菜单2</a></li>
        <li class="item">
-           <a href="">链接3</a>
+           <a href="">菜单3</a>
            <ul class="menu">
-               <li>子菜单1</li>
-               <li>子菜单2</li>
-               <li>子菜单3</li>
+               <li><a href="https://www.baidu.com">子菜单1</a></li>
+               <li><a>子菜单2</a></li>
+               <li><a>子菜单3</a></li>
                <li>子菜单4</li>
            </ul>
        </li>
-       <li class="item"><a href="">链接4</a></li>
+       <li class="item"><a href="">菜单4</a></li>
    </ul>
-
 </body>
 </html>
