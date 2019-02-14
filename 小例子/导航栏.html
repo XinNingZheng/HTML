@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #list{
+            width: 500px;
+            height: 30px;
+        }
+
+        #list .item {
+            width: 100px;
+            height: 30px;
+            background: #74b3ff;
+            float: left;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 30px;
+            /*cursor: pointer;*/
+        }
+
+        #list .item:hover {
+            background: #7a85ff;
+        }
+
+        #list .item > a{
+            color: #fff;
+            text-decoration: none;
+            width: 100px;
+            height: 30px;
+            display: block;
+        }
+
+        #list .menu{
+            display: none;
+        }
+
+        #list .menu > li {
+            background: #fffc94;
+            cursor: pointer;
+        }
+        #list .menu > li:hover {
+            background: #ffe257;
+        }
+
+        #list .item:hover > .menu {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+   <ul id="list">
+       <li class="item"><a href="">链接1</a></li>
+       <li class="item"><a href="">链接2</a></li>
+       <li class="item">
+           <a href="">链接3</a>
+           <ul class="menu">
+               <li>子菜单1</li>
+               <li>子菜单2</li>
+               <li>子菜单3</li>
+               <li>子菜单4</li>
+           </ul>
+       </li>
+       <li class="item"><a href="">链接4</a></li>
+   </ul>
+
+</body>
+</html>
