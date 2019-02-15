@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        .a{
+            height: 200px;
+            width: 200px;
+            background: red;
+            position: absolute;
+            left: 100px;
+            top: 1500px;
+        }
+        .b{
+            height: 200px;
+            width: 200px;
+            background: yellow;
+            position: fixed;
+            top: 600px;
+        }
+        .c{
+            width: 200px;
+            background: green;
+            position:fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        
+        .d{
+            height: 400px;
+            width: 400px;
+            background: #000;
+        }
+        .e{
+            height: 300px;
+            width: 300px;
+            background: #fff;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+        .f{
+            height: 200px;
+            width: 200px;
+            background: #000000;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+        .g{
+            height: 100px;
+            width: 100px;
+            background: #fff;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        .h{
+            height: 400px;
+            width: 600px;
+            position: relative;
+            top: 100px;
+            background: #ffff3e;
+        }
+        .i{
+            height: 200px;
+            width: 300px;
+            background: #7a85ff;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="a">1绝对定位 脱离文档流</div>
+    <div class="b">2固定定位 脱离文档流</div>
+    <div class="c">3 top0 bottom0 撑开</div>
+
+    <div class="d">
+        <div class="e">
+            <div class="f">
+                <div class="g"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h">
+        <div class="i">居中</div>
+    </div>
+</body>
+</html>
