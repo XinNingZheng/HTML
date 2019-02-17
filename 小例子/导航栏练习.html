@@ -40,7 +40,7 @@
             color: #ffffff;
             height: 30px;
             width: 100px;
-            display: block;
+            /*display: block;*/
         }
 
         .things > li{
@@ -50,6 +50,7 @@
 
         .things{
             display: none;
+            width: 200px;
         }
 
         .things > li:hover{
@@ -60,12 +61,24 @@
             display: block;
         }
 
+        .triangle{
+            position: absolute;
+            top: 13px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #ff0e2b transparent transparent;
+            font-size: 0;
+            line-height: 0;
+        }
     </style>
 </head>
 <body>
     <ul id="list">
         <li class="menu">1</li>
         <li class="menu">2
+            <span class="triangle"></span>
             <ul class="things">
                 <li><a href="导航栏.html">导航栏</a></li>
                 <li><a href="八卦简单.html">八卦</a></li>
@@ -76,5 +89,6 @@
         <li class="menu">3</li>
         <li class="menu">4</li>
     </ul>
+
 </body>
 </html>
