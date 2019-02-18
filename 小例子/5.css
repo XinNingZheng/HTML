@@ -1,0 +1,105 @@
+
+@keyframes myfourth
+{
+    0%   {
+        background: red;
+        left: 0px;
+        top:0px;
+    }
+    25%  {
+        background: yellow;
+        left: 200px;
+        top:0;
+    }
+    50%  {
+        background: blue;
+        left: 200px;
+        top:200px;}
+    75% {
+        background: green;
+        left: 0;
+        top:200px;
+    }
+    100% {
+        background: pink;
+        left: 0;
+        top:0;
+    }
+}
+.d{
+    /* 基础样式 */
+    position: absolute;
+    margin: 0 auto;
+    top:200px;
+    left:600px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+}
+.d1{
+    width: 100px;
+    height: 100px;
+    top:162px;
+    left:562px;
+    position: absolute;
+    border-radius: 50px;
+    background: red;
+    animation:myfifth 5s;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes myfifth
+{
+    0%   {
+        left: 562px;
+        top:162px;
+    }
+    25% {
+        left: 562px;
+        top:162px;
+    }
+
+    50%  {
+        left: 642px;
+        top:242px;}
+    75% {
+        left: 642px;
+        top:242px;
+    }
+    100% {
+        left: 562px;
+        top:162px;
+    }
+}
+.d2{
+    width: 100px;
+    height: 100px;
+    top:242px;
+    left:557px;
+    position: absolute;
+    border-radius: 50px;
+    background: red;
+    animation:mysixth 5s;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes mysixth
+{
+    0%   {
+        left: 640px;
+        top:160px;
+    }
+    25%  {
+        left: 559px;
+        top:240px;}
+    50%  {
+        left: 559px;
+        top:240px;}
+    75% {
+        left: 640px;
+        top:160px;
+    }
+    100% {
+        left: 640px;
+        top:162px;
+    }
+}
