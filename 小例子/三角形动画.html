@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三角形动画 </title>
+    <style>
+        .triangle{
+            position: absolute;
+            top: 15px;
+            width: 0;
+            left: 250px;
+            height: 0;
+            border-width: 30px;
+            border-style: solid dashed dashed;
+            border-color: #7a85ff transparent transparent;
+            font-size: 0;
+            line-height: 0;
+        }
+        .dao:hover .triangle{
+            transform: rotate(180deg);
+            transform-origin: 30px 15px;
+            transition: transform .4s ease;
+        }
+    </style>
+</head>
+<body>
+<span class="dao">
+    <h1>点我三角形会动</h1>
+    <span class="triangle"></span>
+</span>
+</body>
+</html>
